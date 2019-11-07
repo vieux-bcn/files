@@ -18,7 +18,7 @@ public class User {
     @Column(name = "address")
     private String address;
     @Column(name = "codePostal")
-    private int codePostal;
+    private String codePostal;
     @Column(name = "city")
     private String city;
     @Column(name = "country")

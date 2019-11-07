@@ -24,7 +24,7 @@ public class User {
     @Column(name = "country")
     private String country;
     @Column(name = "password")
-    private boolean password;
+    private String password;
     @Column(name = "fileName")
     private String fileName;
     @Column(name = "fileType")

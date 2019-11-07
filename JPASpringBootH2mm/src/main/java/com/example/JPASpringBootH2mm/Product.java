@@ -42,8 +42,7 @@ public class Product {
     private int description;
     @Column(name = "stockQuantity")
     private long stockQuantity;
-    @Column(name = "stockQuantity")
-    private long stockInOrder;
+    
     @Column(name = "order")
     private boolean order;
     @Column(name = "sold")
@@ -55,7 +54,7 @@ public class Product {
     @Column(name = "fileData")
     private String fileData;
     
-    @ManyToOne(fetch = FetchType.LAZY, optional = false)
+    @ManyToOne(optional = false)
     @JoinColumn(name = "user_id", nullable = false)
     @OnDelete(action = OnDeleteAction.CASCADE)
     
